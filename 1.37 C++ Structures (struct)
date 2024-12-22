@@ -1,0 +1,33 @@
+
+#include <iostream>
+#include <string>
+
+// Define a structure
+struct Person {
+    std::string name;
+    int age;
+    float height;
+};
+
+int main() {
+    // Declare and initialize a structure variable
+    Person person1;
+    person1.name = "Akash Kumar";
+    person1.age = 25;
+    person1.height = 5.9;
+
+    // Print the structure members
+    std::cout << "Name: " << person1.name << std::endl;
+    std::cout << "Age: " << person1.age << std::endl;
+    std::cout << "Height: " << person1.height << std::endl;
+
+    // Declare and initialize another structure variable
+    Person person2 = {"Ravi Singh", 30, 6.1};
+
+    // Print the structure members
+    std::cout << "Name: " << person2.name << std::endl;
+    std::cout << "Age: " << person2.age << std::endl;
+    std::cout << "Height: " << person2.height << std::endl;
+
+    return 0;
+}
